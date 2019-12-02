@@ -1,0 +1,46 @@
+nav {
+    margin-top:10px;
+    background-color: black;
+    padding:10px;
+}
+nav a{
+    border-right:2px solid white;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+body { background-color: #ffffff;
+font-family: Arial;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 30px;
+    width: 465px;
+}
+
+div.wrapper{
+    margin: auto;
+    width: 960px;
+
+
+}
+article{
+    float: left;
+    width: 465px;
+    margin-right: 30px;
+    margin-top: 30px;
+
+}
+td{ padding: 15px;
+    border: 1px solid black;
+
+}
+
+td.groen{
+    background-color: #d1f0c4;
+}
+td.blauw{
+    background-color: #c6ebf8;
+}
