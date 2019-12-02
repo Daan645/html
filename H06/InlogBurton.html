@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<div id="wrapper">
 <form action="https://www.savatarian.com/html5/form.php" method="get">
 
     <h1>Burton Education</h1>
@@ -20,19 +21,23 @@
 
     <label>Lekker eten</label>
     <div class="eten">
-        <input type="checkbox">
-        <label>Sperziebonen</label>
+        <input name="sperziebonen" type="checkbox" value="sperziebonen">
+        <label>Sperziebonen </label>
     </div>
 
     <label for="tussenvoegsel">Tussenvoegsel:</label>
     <input class="textinputs" type="text" name="tussenvoegsel" id="tussenvoegsel">
-
     <div class="eten">
-        <input type="checkbox">
+        <input name="aardappelen" type="checkbox" value="aardappelen">
         <label>Aardappelen</label>
     </div>
 
-    <label>Gesclacht</label>
+    <div class="eten">
+        <input name="hamburger" type="checkbox" value="hamburger">
+        <label>Hamburger</label>
+    </div>
+
+    <label>Geslacht</label>
     <div class="ruimte">
         <input type="radio" name="gesclacht" value="m">
         <label>man</label>
@@ -40,9 +45,14 @@
         <label>vrouw</label>
     </div>
 
+
     <label>Kleur ogen</label>
     <div class="ruimte">
-        <input type="select" name="kleurogen">
+        <select name="oogkleur" >
+            <option value="blauw">Blauw</option>
+            <option value="groen">Groen</option>
+            <option value="bruin">Bruin</option>
+        </select>
     </div>
 
     <label>Geboortedatum</label>
@@ -51,21 +61,21 @@
     </div>
 
     <label id="idomschrijving">Omschrijving</label>
-    <div class="ruimte">
-        <input id="omschrijving" type="text" name="Omschrijving">
+    <textarea name="omschrijving" rows="4" cols="50">
+</textarea>
+
+
+    <div id="knoppen">
+        <a href="../H05/BurtonEducationWebsite.html"><button type="button">Terug</button></a>
+        <button type="reset">Annuleer</button>
+        <input type="submit" id="submit" name="submit">
+
     </div>
-
-
-        <div id="knoppen">
-            <input type="button" id="annuleer" name="annuleer">
-            <input type="submit" id="submit" name="submit">
-        </div>
-
 
 
 </form>
 <header><a href="../H05/burton_logo.png"></a></header>
-
+</div>
 </body>
 
 </html>
